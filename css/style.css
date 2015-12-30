@@ -1,0 +1,143 @@
+body
+{
+	margin: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'first';
+    src: url('first.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+.clear
+{
+    clear: both;
+    position: relative;
+    top: 5px;
+}
+
+#wrapper
+{
+	height: 871px;
+}
+
+#logo
+{
+    position: absolute;
+    top: 0;	
+    left: 45%;
+}
+
+#logo img
+{
+    width: 50px;   
+}
+
+#logo h1
+{
+    font-family: first, sans-serif;
+    float: right;
+    margin: 9px;
+    color: #fff;    
+}
+
+/*#paint
+{
+	height: 100%;
+}*/
+
+#tmpCanvas {
+    position: absolute;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    top: 50px;
+    cursor: crosshair;
+}
+
+#panel
+{
+	width: 99px;
+	height: 99.8%;
+	display: inline-block;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;	
+}
+
+#tools
+{
+	margin: 0;
+	padding: 0;
+    position: relative;
+    top: 230px;    
+}
+
+#tools li 
+{
+    float: left;
+	font-size: 1.7em;
+    padding: 5px;
+    color: #fff;
+    margin: 5px;
+    border-radius: 5px;
+	position: relative;
+    left: 2px;    
+}
+
+#color
+{
+    width: 70px;
+    text-align: center;	
+}
+
+#thickness 
+{
+    border: 0;
+}
+
+#thickness input
+{
+    width: 70px;
+}
+
+#img-save
+{
+    background: #BDC3C7;
+    width: 220px;
+    height: 88.7%;
+    position: absolute;
+    top: 50px;
+    right: -220px;
+    /*right: 50px;*/
+    padding-top: 10px;
+    overflow: auto;
+    transition: 0.5s;
+}
+
+#img-save img
+{
+    width: 165px;
+    height: 165px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#show-img
+{
+    z-index: 10;
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 16px;
+    background: #BDC3C7;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;    
+}
